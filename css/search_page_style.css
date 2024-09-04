@@ -1,0 +1,289 @@
+.page-container
+{
+    min-height: 80vh;
+}
+
+.search-settings-panel
+{
+    background: linear-gradient(45deg, #8f281d, #da4112);
+    padding: 0;
+    display: grid;
+    grid-template-columns: 29fr 1fr;
+}
+
+.results-list-panel
+{
+    height: 58vh; 
+    background-color: rgb(250, 245, 235); 
+    display: flex; 
+    flex-direction: column;
+    padding: 1rem;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.result-item-article
+{
+    margin-top: 4vh;
+    background-color: white;
+    min-height: 20vh;
+    max-height: 30vh;
+    display: grid;
+    grid-template-columns: 2fr 26fr;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.result-item-user
+{
+    margin-top: 4vh;
+    background-color: white;
+    min-height: 16vh;
+    max-height: 16vh;
+    display: grid;
+    grid-template-columns: 2fr 26fr;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.result-item:last-child
+{
+    margin-bottom: 2rem;
+}
+
+.search-toolbar
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    z-index: 10;
+}
+
+.search-toolbar div
+{
+    flex: 1;
+    height: 2.2rem;
+    background-color: whitesmoke;
+    text-align: left;
+    padding: 1vh;
+    color: #da4112; 
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-family: ganesh;
+    text-transform: uppercase;
+}
+
+.search-toolbar div:hover
+{
+    background-color: #ddd;
+    color: black;
+}
+
+.search-settings-maximized
+{
+    display: grid;
+    grid-template-columns: 3fr 14fr;
+    height: 22vh; 
+}
+
+.search-settings-minimized
+{
+    height: 5vh;
+    padding-left: 10vh;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.body-maximized
+{
+    height: 75vh;
+}
+
+.search-settings-button
+{
+    background-color: #da4112;
+    display: flex; 
+    flex-direction: column-reverse;
+    color: whitesmoke;
+}
+
+.search-settings-button i
+{
+    text-align: center; 
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.search-inner-panel
+{
+    padding-top: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: whitesmoke;
+    border-bottom: 1px black solid;
+    border-top: 1px black solid;
+    border-right: 1px black solid;
+    z-index: 10;
+    
+}
+
+.userinfo-tag
+{
+    padding: 0 0.6vh;
+    border: 0.1vh solid rgba(0, 0, 0);
+    border-radius: 5%;
+    font-family: 'ganesh';
+    margin-right: 0.6vh;
+}
+
+.tag-supporter
+{
+    background-color: white;
+}
+
+.tag-supporter i
+{
+    color:green;
+    margin-bottom: 1rem;
+}
+
+.tag-author
+{
+    background-color: white;
+}
+
+.tag-author i
+{
+    color:rgb(0, 108, 248);
+    margin-bottom: 1rem;
+}
+
+.tag-tag
+{
+    background-color: white;
+}
+
+.tag-tag i
+{
+    color:rgb(255, 0, 160);
+    margin-bottom: 1rem;
+}
+
+.tag-dictator
+{
+    background-color: black;
+    border: 0.1vh solid goldenrod;
+    color: goldenrod;
+}
+
+.tag-dictator i
+{
+    color:goldenrod;
+    margin-bottom: 1rem;
+}
+
+.ria-icon
+{
+    background-color: white; display: grid; margin: auto; cursor: pointer; text-align: center;
+}
+
+.ria-icon i
+{
+    font-size: 3.5rem; text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000; color:#007882;
+}
+
+.ria-info
+{
+    padding: 1.5rem 3rem;
+    font-family: 'ganesh';
+}
+
+.ria-info div h1
+{
+    display: inline;
+}
+
+.ria-inner
+{
+    display: flex; flex-direction: column-reverse; margin-top: 0.5rem;
+}
+
+.riu-icon
+{
+    background-color: white; display: grid; margin: auto; cursor: pointer; text-align: center;
+}
+
+.riu-icon img
+{
+    height: 8vh;
+}
+
+.riu-info
+{
+    padding: 1.5rem 3rem;
+    font-family: 'ganesh';
+}
+
+.riu-info h1
+{
+    display: inline;
+}
+
+.bottoneRicerca{
+    flex: 1;
+    margin: 0;
+}
+
+.form{
+    width: 70%;
+    border: 0.25vh solid #8f281d;
+    border-radius: 0.5vh;
+    padding: 0.5vh 3.5vh;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.form:focus{
+    border-color: tomato;
+    box-shadow: tomato;
+}
+
+.form-container{
+    position: relative;
+}
+
+.form-container i{
+    position: absolute;
+    left: 0.8vh;
+    top: 0.7vh;
+    color: #8f281d;
+    transition: .5s;
+}
+
+.form-container input:focus + i{
+    color: tomato;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE,Edge e Firefox  */
+.example {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox 64 */
+}
+
+.panel{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+.activeButton{
+    background: linear-gradient(45deg, #8f281d, #da4112);
+    color: whitesmoke !important;
+}

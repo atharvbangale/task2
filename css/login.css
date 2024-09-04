@@ -1,0 +1,115 @@
+.login-bg
+{
+    background-image: url('../assets/img/space.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 45px;
+}
+
+.box
+{
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 0.5em;
+    padding: 3rem 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 800px;
+    max-height: 800px;
+}
+
+.reg-box
+{
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 0.5em;
+    padding: 2rem 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 80vh;
+    min-width: 75vh;
+    max-height: 80vh;
+    max-height: 75vh;
+}
+
+.registrationform-body label
+{
+    line-height: 4vh;
+}
+
+.registrationform-body input
+{
+    max-height: 1.8vh;
+}
+
+.loginform-body input
+{
+    min-width: 25rem;
+    margin-left: 0;
+}
+
+.loginform-submit
+{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.auth-error
+{
+    flex-grow: 2;
+    text-align: center;
+    color: red;
+}
+
+.frog
+{
+    max-width: 15%; 
+    position: absolute; 
+    bottom: 5vh; 
+    right: 4vw;
+}
+
+.register-here
+{
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.form{
+    width: 100%;
+    border: 0.25vh solid #8f281d;
+    border-radius: 0.5vh;
+    padding: 2vh 5vh;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.form:focus{
+    border-color: tomato;
+    box-shadow: tomato;
+}
+
+.form-container{
+    margin-bottom: 1vh;
+    position: relative;
+}
+
+.form-container i{
+    position: absolute;
+    left: 1.5vh;
+    top: 1.2vh;
+    color: #8f281d;
+    transition: .5s;
+}
+
+.form-container input:focus + i{
+    color: tomato;
+}

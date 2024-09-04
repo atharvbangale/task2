@@ -1,0 +1,278 @@
+.settings-container *
+{
+    box-sizing: border-box;
+}
+
+/* Barra sinistra */
+.tab 
+{
+    float: left;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    width: 20%;
+    height: 75.5vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bottoni barra sinistra */
+.tab button
+{
+    display: block;
+    background-color: inherit;
+    color: #da4112;
+    width: 100%;
+    height: 5rem;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: "ganesh", sans-serif;
+    text-transform: uppercase;
+    font-size: medium;
+    padding-left: 3%;
+}
+/* Hover bottoni barra sinistra */
+.tab button:hover 
+{
+    background-color: #ddd;
+    color: black;
+}
+
+/* Bottone bello per separare il bottone di logout */
+.tab button.ghandi{
+    transition: 0s ease;
+    cursor: unset;
+}
+
+.tab button.ghandi:hover{
+    opacity: 0;
+
+}
+
+/* Stile per bottoni barra sinistra quando attivi */
+.tab button.active 
+{
+    background: linear-gradient(45deg, #8f281d, #da4112);
+    color: whitesmoke;
+}
+
+/* Barra destra */
+.tabcontent 
+{
+    padding: 4%;
+    border: 1px solid #000000;
+    width: 80%;
+    background-color: whitesmoke;
+    border-left: none;
+    height: 75.5vh;
+    display: grid;
+    grid-column-gap: 200px;
+    overflow: auto;
+    float: left;
+}
+
+/* stile per l'avatar */
+.avatar
+{
+    width: 30vh; 
+    max-height: 30vh; 
+    min-height: 30vh;
+}
+
+.avatar-mini
+{
+    width: 5vh; 
+    max-height: 5vh; 
+    min-height: 5vh;
+}
+
+/* Metodo per nascondere le schede della barra destra */
+.kali
+{
+    display: none;
+}
+
+/* Stili per immagine di profilo */
+.brahma-profile
+{
+    /* background: linear-gradient(45deg, #da4112, #00dddd); */
+    max-height: 30vh; 
+    width: 30vh; 
+    border-radius: 50%; 
+    border: 1.5px solid rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden; /* ringraziando vishnu */
+}
+
+/* Stili per immagine di profilo */
+.brahma-profile-mini
+{
+    /* background: linear-gradient(45deg, #da4112, #00dddd); */
+    max-height: 5vh; 
+    width: 5vh; 
+    border-radius: 50%; 
+    border: 1.5px solid rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden; /* ringraziando vishnu */
+}
+
+/* Stili per immagine di tier */
+.brahma-tier
+{
+    background: linear-gradient(90deg, #da4112, #fff8dc);
+    height: auto;
+    border-radius: 50%; 
+    border: 1.5px solid rgba(0, 0, 0, 0.8);
+}
+
+/* Separatore della barra destra*/
+.sep
+{
+    background-color: black; 
+    max-height: 0.1vh; 
+    margin: 2vh 0;
+}
+
+/* Banner superiore profilo*/
+.banner
+{
+    min-height: 35vh; 
+    display: grid; 
+    grid-template-columns: 3fr 7fr;
+    z-index: 1;
+}
+
+/* Contenuto barra destra */
+.vishnu
+{
+    display: grid; 
+    grid-template-columns: 2fr 2fr; 
+    /* max-height: 50vh;  */
+    width: 100%;
+}
+/* Overlay per la modifica dell'immagine di profilo */
+.overlay 
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 50%; 
+    background-color: rgba(140, 140, 140, 0.4);
+    
+}
+/* Testo dell'overlay per la modifica dell'immagine di profilo */
+.text-img
+{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Hover per l'overlay per la modifica dell'immagine di profilo */
+.brahma-profile:hover .overlay 
+{
+    opacity: 0.8;
+}
+
+.userinfo-tag
+{
+    padding: 0 0.6vh;
+    border: 0.1vh solid rgba(0, 0, 0);
+    border-radius: 5%;
+    font-family: 'ganesh';
+    margin-right: 0.6vh;
+}
+
+.tag-supporter
+{
+    background-color: white;
+}
+
+.tag-supporter i
+{
+    color:green;
+    margin-bottom: 1rem
+}
+
+.tag-author
+{
+    background-color: white;
+}
+
+.tag-author i
+{
+    color:rgb(0, 108, 248);
+    margin-bottom: 1rem
+}
+
+.tag-tag
+{
+    background-color: white;
+}
+
+.tag-tag i
+{
+    color:rgb(255, 0, 160);
+    margin-bottom: 1rem
+}
+
+.tag-dictator
+{
+    background-color: black;
+    border: 0.1vh solid goldenrod;
+    color: goldenrod;
+}
+
+.tag-dictator i
+{
+    color:goldenrod;
+    margin-bottom: 1rem;
+}
+
+.error
+{
+    color: red;
+}
+
+.form{
+    width: 100%;
+    border: 0.25vh solid #8f281d;
+    border-radius: 0.5vh;
+    padding: 2vh 5vh;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.form:focus{
+    border-color: tomato;
+    box-shadow: tomato;
+}
+
+.form-container{
+    margin-bottom: 1vh;
+    position: relative;
+}
+
+.form-container i{
+    position: absolute;
+    left: 1.8vh;
+    top: 2.1vh;
+    color: #8f281d;
+    transition: .5s;
+}
+
+.form-container input:focus + i{
+    color: tomato;
+}
